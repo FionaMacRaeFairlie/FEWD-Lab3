@@ -116,9 +116,12 @@ function App() {
     <div className="container">
       <h1>Menu</h1>
       <Search details={items}/>
+      
 
     </div>
   );
 }
 export default App;
 
+//<DisplayFoodItems foodList={items} />
+//<StyledDisplayFoodItems foodList={items} />
