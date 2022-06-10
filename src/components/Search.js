@@ -20,7 +20,7 @@ function Search({ details }) {
             <h4>Search </h4>
             <input
               className="form-control"
-              type="search"
+              type="text"
               placeholder="Search ..."
               onChange={handleChange}
             />
