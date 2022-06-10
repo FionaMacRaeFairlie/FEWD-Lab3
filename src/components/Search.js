@@ -12,9 +12,6 @@ function Search({ details }) {
     setSearchField(e.target.value);
   };
 
-  function searchList() {
-    return <EntryList filtered={filtered} />;
-  }
 
   return (
     <>
