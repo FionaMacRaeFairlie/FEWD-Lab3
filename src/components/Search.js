@@ -30,7 +30,7 @@ function Search({ details }) {
           <div className="col-sm"></div>
         </div>
 
-        {searchList()}
+        <StyledDisplayFoodItems foodList={filtered} />
       </div>
     </>
   );
