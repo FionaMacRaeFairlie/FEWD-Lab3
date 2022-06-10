@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import EntryList from "./EntryList";
+import StyledDisplayFoodItems from "./StyledDisplayFoodItems";
 
 function Search({ details }) {
   const [searchField, setSearchField] = useState("");
@@ -11,10 +11,6 @@ function Search({ details }) {
   const handleChange = (e) => {
     setSearchField(e.target.value);
   };
-
-  function searchList() {
-    return <EntryList filtered={filtered} />;
-  }
 
   return (
     <>
@@ -33,10 +29,12 @@ function Search({ details }) {
           <div className="col-sm"></div>
         </div>
 
-        {searchList()}
+         <StyledDisplayFoodItems foodList={filtered} />
+       
       </div>
     </>
   );
 }
 
 export default Search;
+
