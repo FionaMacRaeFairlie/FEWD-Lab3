@@ -1,7 +1,5 @@
 import React from "react";
-import DisplayFoodItems from "./components/DisplayFoodItems";
-import StyledDisplayFoodItems from "./components/StyledDisplayFoodItems";
-import Search from "./components/Search";
+import Search from "./components/Search"
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const items = [
@@ -31,6 +29,7 @@ const items = [
     description: "with fully fat or skimmed milk",
     price: "2.00",
     category: "drinks",
+    available: "yes",
   },
   {
     name: "chocolate cake",
@@ -103,25 +102,32 @@ const items = [
     available: "yes",
   },
   {
+    name: "tea",
+    description: "a range of varieties",
+    price: "1",
+    category: "drinks",
+    available: "yes",
+  },
+  {
     name: "pasta",
     description: "with a tomato and garlic sauce",
     price: "5.50",
     category: "main",
   },
-];
+  {
+    name: "chips",
+    description: "with ketchup or mayonnaise",
+    price: "3",
+    category: "side",
+    available: "yes",
+  },
+]
 
 function App() {
-
   return (
     <div className="container">
-      <h1>Menu</h1>
       <Search details={items}/>
-      
-
-    </div>
+      </div>
   );
 }
 export default App;
-
-//<DisplayFoodItems foodList={items} />
-//<StyledDisplayFoodItems foodList={items} />

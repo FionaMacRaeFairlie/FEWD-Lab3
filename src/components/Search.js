@@ -1,40 +1,27 @@
 import React, { useState } from "react";
-import StyledDisplayFoodItems from "./StyledDisplayFoodItems";
+import StyledAndFilteredDisplayFoodItems from "./StyledAndFilteredDisplayFoodItems";
 
 function Search({ details }) {
-  const [searchField, setSearchField] = useState("");
+   const [searchField, setSearchField] = useState("");
 
   const filtered = details.filter((entry) => {
-    return entry.name.toLowerCase().includes(searchField.toLowerCase());
+    return entry.name.toLowerCase().includes(searchField.toLowerCase())|| entry.description.toLowerCase().includes(searchField.toLowerCase());
   });
 
-  const handleChange = (e) => {
-    setSearchField(e.target.value);
-  };
-
   return (
-    <>
-      <div className="container">
-        <div className="row">
-          <div className="col-sm">
-            <h4>Search </h4>
+      <div>
+          <div>
             <input
               className="form-control"
               type="text"
               placeholder="Search ..."
-              onChange={handleChange}
+              onChange={(e) =>  setSearchField(e.target.value)}
             />
           </div>
-          <div className="col-sm"></div>
-          <div className="col-sm"></div>
-        </div>
-
-         <StyledDisplayFoodItems foodList={filtered} />
-       
+          <StyledAndFilteredDisplayFoodItems foodList={filtered} />
       </div>
-    </>
+  
   );
 }
 
 export default Search;
-
