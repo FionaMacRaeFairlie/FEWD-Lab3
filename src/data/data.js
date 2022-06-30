@@ -133,13 +133,5 @@ export const items = [
       price: "3",
       category: "side",
       available: "yes",
-    },
-    {
-      id: "18",
-      name: "sparkling mineral water",
-      description: "locally sourced",
-      price: "1.50",
-      category: "drinks",
-      available: "yes",
     }
   ];
