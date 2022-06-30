@@ -11,4 +11,5 @@ const FoodItem = ({ food }) => {
     </div>
   );
 };
+
 export default FoodItem;

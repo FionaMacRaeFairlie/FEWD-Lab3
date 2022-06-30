@@ -16,22 +16,3 @@ const StyledAndFilteredDisplayFoodItems = ({ foodList }) => {
 };
 
 export default StyledAndFilteredDisplayFoodItems;
-
-
-
-/*
-const foodItem = [];
-this.props.items.map(item => {
-if ( this.props.menuCategory === item.category) {
-foodItem.push(
-<SimpleProp
-key={item._id}
-name={item.name}
-description={item.description}
-price={item.price}
-/>
-);
-return foodItem;
-} else return null;
-}
-);*/

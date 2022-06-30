@@ -14,5 +14,4 @@ const DisplayFoodItems = ({foodList }) => {
        </div>
    );
 };
- 
-export default DisplayFoodItems;
+ xport default DisplayFoodItems;   

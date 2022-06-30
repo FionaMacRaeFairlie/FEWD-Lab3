@@ -23,5 +23,4 @@ function Search({ details }) {
   
   );
 }
-
 export default Search;
