@@ -1,13 +1,13 @@
 import React from 'react';
-import BasicStyleFoodItem from './BasicStyleFoodItem';
+import FoodItem from './FoodItem';
 
 const DisplayFoodItems = ({foodList }) => {
 
    return (
-       <div>
+       <div >
            {foodList.map((food, index) => {
                return (
-                <BasicStyleFoodItem food={food} key={index} />
+                <FoodItem food={food} key={index} />
                )
            })}
 
